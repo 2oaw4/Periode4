@@ -1,9 +1,10 @@
-import willekeurig
-from woord import woord_lijst
+import random
+from woorden import woord_lijst
+from hangman import display_hangman
 
 def pak_woord():
-  woord = willekeurig.keus(woord_lijst)
-return wooord.upper() 
+    woord = random.choice(woord_lijst)
+    return woord.upper() 
 
 
 def speel(woord):
